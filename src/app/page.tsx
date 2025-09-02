@@ -5,29 +5,55 @@ import {
   ClockIcon,
   CogIcon,
   ChartBarIcon,
+  InboxIcon,
+  UserGroupIcon,
+  ShieldCheckIcon,
+  ArrowTrendingUpIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Home() {
   const benefits = [
     {
-      icon: CheckCircleIcon,
-      title: "Centralized tickets",
-      description: "All requests in one place.",
+      icon: InboxIcon,
+      title: "Unified Request Management",
+      description: "Capture and organize all client requests from any channel in one centralized system.",
+      details: "Email, web forms, chat, phone calls, and integrations all flow into a single, organized queue.",
+      metric: "100% visibility"
     },
     {
       icon: CogIcon,
-      title: "Automation",
-      description: "Reduce manual work with alerts and rules.",
+      title: "Intelligent Automation",
+      description: "Reduce manual work with smart workflows that handle routine tasks automatically.",
+      details: "Auto-assignment, deadline tracking, escalations, and custom triggers save hours every day.",
+      metric: "75% time saved"
     },
     {
-      icon: ClockIcon,
-      title: "Client portal",
-      description: "Each business customizes its own portal.",
+      icon: UserGroupIcon,
+      title: "Branded Client Experience",
+      description: "Provide clients with a professional, self-service portal that matches your brand.",
+      details: "Custom branding, real-time updates, file sharing, and approval workflows in your colors.",
+      metric: "40% fewer emails"
     },
     {
       icon: ChartBarIcon,
-      title: "Insights",
-      description: "Simple dashboards for tracking.",
+      title: "Actionable Analytics",
+      description: "Make data-driven decisions with comprehensive reporting and real-time dashboards.",
+      details: "Track response times, satisfaction scores, team performance, and business trends.",
+      metric: "Real-time insights"
+    },
+    {
+      icon: ShieldCheckIcon,
+      title: "Enterprise Security",
+      description: "Keep your data safe with bank-level security and compliance standards.",
+      details: "SOC 2 compliance, role-based access, audit trails, and data encryption built-in.",
+      metric: "99.9% uptime"
+    },
+    {
+      icon: ArrowTrendingUpIcon,
+      title: "Scalable Growth",
+      description: "Grow your business without growing your support headaches or team size.",
+      details: "Handle 10x more requests with the same team through automation and efficiency.",
+      metric: "10x capacity"
     },
   ];
 
@@ -68,41 +94,81 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Benefits Section */}
-      <div className="py-24 sm:py-32">
+      {/* Enhanced Key Benefits Section */}
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-yellow-600">
               Key Benefits
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Everything you need to support your clients
+              Transform your client support experience
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Our platform provides all the tools you need to deliver
-              exceptional customer support while maintaining your unique brand
-              and processes.
+              Stop juggling emails, spreadsheets, and phone calls. Our platform centralizes everything 
+              so you can focus on delivering exceptional service that makes clients love working with you.
             </p>
           </div>
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              {benefits.map((benefit) => (
-                <div key={benefit.title} className="relative pl-16">
-                  <dt className="text-base font-semibold leading-7 text-gray-900">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-yellow-500">
-                      <benefit.icon
-                        className="h-6 w-6 text-black"
-                        aria-hidden="true"
-                      />
+          
+          <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {benefits.map((benefit, index) => (
+                <div 
+                  key={benefit.title} 
+                  className="group relative bg-white rounded-2xl shadow-sm border border-gray-200 p-8 hover:shadow-xl hover:border-yellow-300 transition-all duration-300 hover:-translate-y-2"
+                >
+                  {/* Icon and Metric */}
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-500 group-hover:bg-yellow-400 group-hover:scale-110 transition-all duration-300">
+                      <benefit.icon className="h-7 w-7 text-black" aria-hidden="true" />
                     </div>
-                    {benefit.title}
-                  </dt>
-                  <dd className="mt-2 text-base leading-7 text-gray-600">
-                    {benefit.description}
-                  </dd>
+                    <div className="text-right">
+                      <div className="text-sm font-semibold text-yellow-600 bg-yellow-50 px-3 py-1 rounded-full">
+                        {benefit.metric}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors mb-3">
+                      {benefit.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed mb-4">
+                      {benefit.description}
+                    </p>
+                    <p className="text-sm text-gray-500 leading-relaxed">
+                      {benefit.details}
+                    </p>
+                  </div>
+                  
+                  {/* Hover Effect Accent */}
+                  <div className="absolute inset-x-0 -bottom-px h-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl" />
                 </div>
               ))}
-            </dl>
+            </div>
+          </div>
+          
+          {/* Bottom Stats */}
+          <div className="mt-20 border-t border-gray-200 pt-12">
+            <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gray-900">500+</div>
+                <div className="text-sm text-gray-600">Happy Businesses</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gray-900">1M+</div>
+                <div className="text-sm text-gray-600">Requests Managed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gray-900">99.9%</div>
+                <div className="text-sm text-gray-600">Uptime</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-gray-900">&lt;2min</div>
+                <div className="text-sm text-gray-600">Avg Response</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
