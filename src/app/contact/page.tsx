@@ -80,7 +80,7 @@ export default function Contact() {
               Talk to us
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Have questions? Tell us what you need and we'll get back to you.
+              Have questions? Tell us what you need and we&apos;ll get back to you.
             </p>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                   <CheckIcon className="h-5 w-5 text-green-400" />
                   <div className="ml-3">
                     <p className="text-sm font-medium text-green-800">
-                      Thanks! We'll reply within one business day.
+                      Thanks! We&apos;ll reply within one business day.
                     </p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function Contact() {
                     Send us a message
                   </h2>
                   <p className="mt-2 text-sm text-gray-600">
-                    We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                    We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
                   </p>
                 </div>
 
@@ -189,7 +189,7 @@ export default function Contact() {
 
                 {/* Privacy Note */}
                 <p className="text-xs text-gray-500 text-center">
-                  By submitting this form, you agree to our privacy policy. We'll never share your information.
+                  By submitting this form, you agree to our privacy policy. We&apos;ll never share your information.
                 </p>
               </form>
             </div>

@@ -7,7 +7,7 @@ import { z } from 'zod';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
 import Textarea from '@/components/ui/Textarea';
-import { PlayIcon, CheckIcon } from '@heroicons/react/24/outline';
+import { CheckIcon } from '@heroicons/react/24/outline';
 
 const demoFormSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -74,7 +74,7 @@ export default function Demo() {
               Demo Booked Successfully!
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Thank you for your interest in ReplySystem. We'll be in touch within 24 hours to schedule your personalized demo.
+              Thank you for your interest in ReplySystem. We&apos;ll be in touch within 24 hours to schedule your personalized demo.
             </p>
             <p className="mt-4 text-base leading-7 text-gray-500">
               Check your email for confirmation details and next steps.
@@ -100,7 +100,7 @@ export default function Demo() {
               See how it works
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Share your process—we'll show you how ReplySystem.com can save time from day one.
+              Share your process&mdash;we&apos;ll show you how ReplySystem.com can save time from day one.
             </p>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Demo() {
                   Book Your Demo
                 </h2>
                 <p className="mt-2 text-sm text-gray-600">
-                  Fill out the form below and we'll schedule a personalized demonstration.
+                  Fill out the form below and we&apos;ll schedule a personalized demonstration.
                 </p>
               </div>
 

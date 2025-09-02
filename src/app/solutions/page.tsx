@@ -10,7 +10,6 @@ import {
   BuildingOfficeIcon,
   WrenchScrewdriverIcon,
   ServerStackIcon,
-  ClockIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline';
 

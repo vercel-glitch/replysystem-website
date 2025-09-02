@@ -36,14 +36,14 @@ export default function Signup() {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
+    // watch,
     setValue,
   } = useForm<SignupFormData>({
     resolver: zodResolver(signupSchema),
   });
 
-  const watchCompanyCode = watch('companyCode');
-  const watchInviteLink = watch('inviteLink');
+  // const watchCompanyCode = watch('companyCode');
+  // const watchInviteLink = watch('inviteLink');
 
   const onSubmit = async (data: SignupFormData) => {
     setIsSubmitting(true);
@@ -231,7 +231,7 @@ export default function Signup() {
             <ul className="text-xs text-yellow-800 space-y-1">
               <li>• Ask your admin for the company code</li>
               <li>• Check your email for an invite link</li>
-              <li>• Contact support if you're having trouble</li>
+              <li>• Contact support if you&apos;re having trouble</li>
             </ul>
           </div>
         </div>

@@ -123,9 +123,9 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <blockquote className="text-gray-900">
                 <p className="text-lg leading-7">
-                  "ReplySystem transformed how we handle client support. What
+                  &ldquo;ReplySystem transformed how we handle client support. What
                   used to take hours now takes minutes, and our clients love the
-                  transparency."
+                  transparency.&rdquo;
                 </p>
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-x-4">
@@ -147,9 +147,9 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <blockquote className="text-gray-900">
                 <p className="text-lg leading-7">
-                  "The automation features saved us 15 hours per week. Our team
+                  &ldquo;The automation features saved us 15 hours per week. Our team
                   can now focus on strategic work instead of managing tickets
-                  manually."
+                  manually.&rdquo;
                 </p>
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-x-4">
@@ -171,9 +171,9 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <blockquote className="text-gray-900">
                 <p className="text-lg leading-7">
-                  "Our client satisfaction scores increased by 40% after
+                  &ldquo;Our client satisfaction scores increased by 40% after
                   implementing ReplySystem. The portal gives clients exactly
-                  what they need."
+                  what they need.&rdquo;
                 </p>
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-x-4">
@@ -198,8 +198,8 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <blockquote className="text-gray-900">
                 <p className="text-lg leading-7">
-                  "Finally, a support system that scales with us. We've grown
-                  from 50 to 500 clients without adding support staff."
+                  &ldquo;Finally, a support system that scales with us. We&apos;ve grown
+                  from 50 to 500 clients without adding support staff.&rdquo;
                 </p>
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-x-4">
@@ -219,8 +219,8 @@ export default function Home() {
             <div className="bg-white rounded-2xl p-8 shadow-sm">
               <blockquote className="text-gray-900">
                 <p className="text-lg leading-7">
-                  "The reporting features help us identify trends and improve
-                  our service quality. Our response times dropped by 60%."
+                  &ldquo;The reporting features help us identify trends and improve
+                  our service quality. Our response times dropped by 60%.&rdquo;
                 </p>
               </blockquote>
               <figcaption className="mt-6 flex items-center gap-x-4">

@@ -489,7 +489,7 @@ export default function Register() {
                     Logo Upload (Coming Soon)
                   </h4>
                   <p className="text-xs text-yellow-800">
-                    You'll be able to upload your company logo after creating
+                    You&apos;ll be able to upload your company logo after creating
                     your workspace.
                   </p>
                 </div>
