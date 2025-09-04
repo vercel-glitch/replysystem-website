@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Button from "@/components/ui/Button";
 import {
-  CheckCircleIcon,
-  ClockIcon,
   CogIcon,
   ChartBarIcon,
   InboxIcon,
@@ -16,86 +14,163 @@ export default function Home() {
     {
       icon: InboxIcon,
       title: "Unified Request Management",
-      description: "Capture and organize all client requests from any channel in one centralized system.",
-      details: "Email, web forms, chat, phone calls, and integrations all flow into a single, organized queue.",
-      metric: "100% visibility"
+      description:
+        "Capture and organize all client requests from any channel in one centralized system.",
+      details:
+        "Email, web forms, chat, phone calls, and integrations all flow into a single, organized queue.",
+      metric: "100% visibility",
     },
     {
       icon: CogIcon,
       title: "Intelligent Automation",
-      description: "Reduce manual work with smart workflows that handle routine tasks automatically.",
-      details: "Auto-assignment, deadline tracking, escalations, and custom triggers save hours every day.",
-      metric: "75% time saved"
+      description:
+        "Reduce manual work with smart workflows that handle routine tasks automatically.",
+      details:
+        "Auto-assignment, deadline tracking, escalations, and custom triggers save hours every day.",
+      metric: "75% time saved",
     },
     {
       icon: UserGroupIcon,
       title: "Branded Client Experience",
-      description: "Provide clients with a professional, self-service portal that matches your brand.",
-      details: "Custom branding, real-time updates, file sharing, and approval workflows in your colors.",
-      metric: "40% fewer emails"
+      description:
+        "Provide clients with a professional, self-service portal that matches your brand.",
+      details:
+        "Custom branding, real-time updates, file sharing, and approval workflows in your colors.",
+      metric: "40% fewer emails",
     },
     {
       icon: ChartBarIcon,
       title: "Actionable Analytics",
-      description: "Make data-driven decisions with comprehensive reporting and real-time dashboards.",
-      details: "Track response times, satisfaction scores, team performance, and business trends.",
-      metric: "Real-time insights"
+      description:
+        "Make data-driven decisions with comprehensive reporting and real-time dashboards.",
+      details:
+        "Track response times, satisfaction scores, team performance, and business trends.",
+      metric: "Real-time insights",
     },
     {
       icon: ShieldCheckIcon,
       title: "Enterprise Security",
-      description: "Keep your data safe with bank-level security and compliance standards.",
-      details: "SOC 2 compliance, role-based access, audit trails, and data encryption built-in.",
-      metric: "99.9% uptime"
+      description:
+        "Keep your data safe with bank-level security and compliance standards.",
+      details:
+        "SOC 2 compliance, role-based access, audit trails, and data encryption built-in.",
+      metric: "99.9% uptime",
     },
     {
       icon: ArrowTrendingUpIcon,
       title: "Scalable Growth",
-      description: "Grow your business without growing your support headaches or team size.",
-      details: "Handle 10x more requests with the same team through automation and efficiency.",
-      metric: "10x capacity"
+      description:
+        "Grow your business without growing your support headaches or team size.",
+      details:
+        "Handle 10x more requests with the same team through automation and efficiency.",
+      metric: "10x capacity",
     },
   ];
 
   return (
     <div className="bg-white">
-      {/* Hero Section */}
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-yellow-200 to-yellow-400 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
+      {/* Enhanced Hero Section */}
+      <div className="relative isolate overflow-hidden bg-gradient-to-br from-white via-yellow-50/30 to-yellow-100/50">
+        {/* Background Elements */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-br from-yellow-400/5 to-yellow-600/10 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 right-10 w-72 h-72 bg-yellow-300/20 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-0 left-10 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl"></div>
         </div>
-        <div className="mx-auto max-w-2xl py-6 sm:py-8 lg:py-12">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Managed Support. Customized for Every Client.
+
+        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8 lg:py-20">
+          <div className="mx-auto max-w-4xl text-center">
+            {/* Main Headline */}
+            <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-7xl lg:text-8xl">
+              <span className="block">Support That</span>
+              <span className="block bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent">
+                Scales With You
+              </span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Each company can use ReplySystem.com to manage and support its own
-              clients.
+
+            {/* Subheadline */}
+            <p className="mx-auto mt-8 max-w-3xl text-xl leading-8 text-gray-600 sm:text-2xl">
+              Transform client support from chaos to clarity. ReplySystem
+              centralizes requests, automates workflows, and delivers
+              exceptional service experiences that grow with your business.
             </p>
-            <p className="mt-4 text-base leading-7 text-gray-500">
-              Consolidate requests, automate tasks, and deliver faster support
-              with a system that adapts to your business.
-            </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link href="/demo">
-                <Button size="lg">Get a Live Demo</Button>
+
+            {/* Key Value Props */}
+            <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm font-medium text-gray-600">
+              <div className="flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
+                <span>Setup in 5 minutes</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
+                <span>No credit card required</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
+                <span>30-day free trial</span>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+              <Link href="/register" className="group">
+                <Button
+                  size="xl"
+                  className="relative overflow-hidden bg-yellow-500 text-black hover:bg-yellow-400 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    Start Free Trial
+                    <svg
+                      className="h-5 w-5 transition-transform group-hover:translate-x-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </span>
+                </Button>
               </Link>
-              <Link href="/solutions">
-                <Button variant="outline" size="lg">
-                  Explore Solutions
+
+              <Link href="/demo" className="group">
+                <Button
+                  variant="outline"
+                  size="xl"
+                  className="border-2 border-gray-300 hover:border-yellow-500 hover:text-yellow-600 transition-all duration-300"
+                >
+                  <span className="flex items-center gap-2">
+                    <svg
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Watch Demo
+                  </span>
                 </Button>
               </Link>
             </div>
           </div>
         </div>
-        <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-yellow-300 to-yellow-500 opacity-15 sm:w-[72.1875rem]" />
-        </div>
+
+        {/* Bottom Gradient */}
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
       </div>
 
       {/* Enhanced Key Benefits Section */}
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-gray-50 to-white">
+      <div className="py-24 sm:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
             <h2 className="text-base font-semibold leading-7 text-yellow-600">
@@ -105,22 +180,26 @@ export default function Home() {
               Transform your client support experience
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Stop juggling emails, spreadsheets, and phone calls. Our platform centralizes everything 
-              so you can focus on delivering exceptional service that makes clients love working with you.
+              Stop juggling emails, spreadsheets, and phone calls. Our platform
+              centralizes everything so you can focus on delivering exceptional
+              service that makes clients love working with you.
             </p>
           </div>
-          
+
           <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {benefits.map((benefit, index) => (
-                <div 
-                  key={benefit.title} 
+              {benefits.map((benefit) => (
+                <div
+                  key={benefit.title}
                   className="group relative bg-white rounded-2xl shadow-sm border border-gray-200 p-8 hover:shadow-xl hover:border-yellow-300 transition-all duration-300 hover:-translate-y-2"
                 >
                   {/* Icon and Metric */}
                   <div className="flex items-center justify-between mb-6">
                     <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-500 group-hover:bg-yellow-400 group-hover:scale-110 transition-all duration-300">
-                      <benefit.icon className="h-7 w-7 text-black" aria-hidden="true" />
+                      <benefit.icon
+                        className="h-7 w-7 text-black"
+                        aria-hidden="true"
+                      />
                     </div>
                     <div className="text-right">
                       <div className="text-sm font-semibold text-yellow-600 bg-yellow-50 px-3 py-1 rounded-full">
@@ -128,7 +207,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Content */}
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors mb-3">
@@ -141,165 +220,11 @@ export default function Home() {
                       {benefit.details}
                     </p>
                   </div>
-                  
+
                   {/* Hover Effect Accent */}
                   <div className="absolute inset-x-0 -bottom-px h-1 bg-gradient-to-r from-transparent via-yellow-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-b-2xl" />
                 </div>
               ))}
-            </div>
-          </div>
-          
-          {/* Bottom Stats */}
-          <div className="mt-20 border-t border-gray-200 pt-12">
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">500+</div>
-                <div className="text-sm text-gray-600">Happy Businesses</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">1M+</div>
-                <div className="text-sm text-gray-600">Requests Managed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">99.9%</div>
-                <div className="text-sm text-gray-600">Uptime</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-gray-900">&lt;2min</div>
-                <div className="text-sm text-gray-600">Avg Response</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Testimonials Section */}
-      <div className="bg-gray-50 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-xl text-center">
-            <h2 className="text-lg font-semibold leading-8 tracking-tight text-yellow-600">
-              Testimonials
-            </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              What our clients say
-            </p>
-          </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-gray-900">
-                <p className="text-lg leading-7">
-                  &ldquo;ReplySystem transformed how we handle client support. What
-                  used to take hours now takes minutes, and our clients love the
-                  transparency.&rdquo;
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 flex items-center gap-x-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500">
-                  <span className="text-sm font-semibold text-black">SJ</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">
-                    Sarah Johnson
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    CEO, TechFlow Solutions
-                  </div>
-                </div>
-              </figcaption>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-gray-900">
-                <p className="text-lg leading-7">
-                  &ldquo;The automation features saved us 15 hours per week. Our team
-                  can now focus on strategic work instead of managing tickets
-                  manually.&rdquo;
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 flex items-center gap-x-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500">
-                  <span className="text-sm font-semibold text-black">MC</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">
-                    Michael Chen
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Operations Director, BuildCorp
-                  </div>
-                </div>
-              </figcaption>
-            </div>
-
-            {/* Testimonial 3 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-gray-900">
-                <p className="text-lg leading-7">
-                  &ldquo;Our client satisfaction scores increased by 40% after
-                  implementing ReplySystem. The portal gives clients exactly
-                  what they need.&rdquo;
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 flex items-center gap-x-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500">
-                  <span className="text-sm font-semibold text-black">ER</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">
-                    Emily Rodriguez
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    Founder, Creative Agency Plus
-                  </div>
-                </div>
-              </figcaption>
-            </div>
-          </div>
-
-          {/* Additional testimonials row */}
-          <div className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            {/* Testimonial 4 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-gray-900">
-                <p className="text-lg leading-7">
-                  &ldquo;Finally, a support system that scales with us. We&apos;ve grown
-                  from 50 to 500 clients without adding support staff.&rdquo;
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 flex items-center gap-x-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500">
-                  <span className="text-sm font-semibold text-black">DT</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">
-                    David Thompson
-                  </div>
-                  <div className="text-sm text-gray-600">CTO, CloudStart</div>
-                </div>
-              </figcaption>
-            </div>
-
-            {/* Testimonial 5 */}
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <blockquote className="text-gray-900">
-                <p className="text-lg leading-7">
-                  &ldquo;The reporting features help us identify trends and improve
-                  our service quality. Our response times dropped by 60%.&rdquo;
-                </p>
-              </blockquote>
-              <figcaption className="mt-6 flex items-center gap-x-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-500">
-                  <span className="text-sm font-semibold text-black">LW</span>
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Lisa Wang</div>
-                  <div className="text-sm text-gray-600">
-                    Head of Support, FinTech Pro
-                  </div>
-                </div>
-              </figcaption>
             </div>
           </div>
         </div>
@@ -405,8 +330,8 @@ export default function Home() {
 
             {/* Trust Signal */}
             <p className="mt-8 text-sm text-yellow-800">
-              Trusted by 500+ businesses • Average 4.9/5 rating • 24/7 support
-              included
+              Trusted by successfull businesses • Average 4.9/5 rating • 24/7
+              support included
             </p>
           </div>
         </div>

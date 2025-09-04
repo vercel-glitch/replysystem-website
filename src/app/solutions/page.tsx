@@ -190,7 +190,7 @@ export default function Solutions() {
           
           <div className="mx-auto mt-16 max-w-7xl sm:mt-20 lg:mt-24">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {coreFeatures.map((feature, index) => (
+              {coreFeatures.map((feature) => (
                 <div 
                   key={feature.title} 
                   className="group relative bg-white rounded-2xl shadow-sm border border-gray-200 p-8 hover:shadow-lg hover:border-yellow-300 transition-all duration-300 hover:-translate-y-1"
@@ -421,4 +421,5 @@ export default function Solutions() {
     </div>
   );
 }
+
 
