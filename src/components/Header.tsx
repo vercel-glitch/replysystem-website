@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Solutions', href: '/solutions' },
-  { name: 'Demo', href: '/demo' },
-  { name: 'Contact Us', href: '/contact' },
+  { name: "Home", href: "/" },
+  { name: "Solutions", href: "/solutions" },
+  { name: "Demo", href: "/demo" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Header = () => {
@@ -17,7 +17,10 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-sm relative z-50">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <Image
@@ -41,20 +44,27 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow-600">
+            <Link
+              key={item.name}
+              href={item.href}
+              className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow-600"
+            >
               {item.name}
             </Link>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6 lg:items-center">
-          <Link href="/login" className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow-600 flex items-center">
-            Login
-          </Link>
           <Link
             href="/register"
+            className="text-sm font-semibold leading-6 text-gray-900 hover:text-yellow-600 flex items-center"
+          >
+            Get Started
+          </Link>
+          <Link
+            href="/login"
             className="rounded-md bg-yellow-500 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-yellow-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-500 flex items-center"
           >
-            Start Free Trial
+            Go To App
           </Link>
         </div>
       </nav>
